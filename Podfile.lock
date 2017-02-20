@@ -1,0 +1,40 @@
+PODS:
+  - ComponentKit (0.15.1)
+  - FLEX (2.4.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HHRouter (0.1.9)
+  - Masonry (1.0.2)
+  - PLeakSniffer (0.1.0)
+  - ReactiveObjC (2.1.2)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - ComponentKit (~> 0.15.1)
+  - FLEX (~> 2.4.0)
+  - FMDB (~> 2.6.2)
+  - HHRouter (~> 0.1.9)
+  - Masonry (~> 1.0.1)
+  - PLeakSniffer
+  - ReactiveObjC (~> 2.1.2)
+  - SDWebImage (~> 4.0.0-beta2)
+  - YYModel (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  ComponentKit: beef88630f344efb8344fe40fc6fc7c1732b68c8
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 080e4603299c87e9e540d59703ee74ccc3e92e22
+
+COCOAPODS: 1.2.0.beta.1
