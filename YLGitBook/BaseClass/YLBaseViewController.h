@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YLBaseViewController.h
 //  YLGitBook
 //
 //  Created by Relly on 20/02/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YLBaseViewController : UIViewController
 
 @end
-

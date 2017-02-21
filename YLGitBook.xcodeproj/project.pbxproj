@@ -10,10 +10,15 @@
 		6596C2DAC6524C8622667609 /* libPods-YLGitBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696940D509B68C6D652C3B74 /* libPods-YLGitBook.a */; };
 		B942DC671E5A993D00EDD0C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC661E5A993D00EDD0C9 /* main.m */; };
 		B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC691E5A993D00EDD0C9 /* AppDelegate.m */; };
-		B942DC6D1E5A993D00EDD0C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC6C1E5A993D00EDD0C9 /* ViewController.m */; };
 		B942DC701E5A993D00EDD0C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B942DC6E1E5A993D00EDD0C9 /* Main.storyboard */; };
 		B942DC721E5A993D00EDD0C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B942DC711E5A993D00EDD0C9 /* Assets.xcassets */; };
 		B942DC751E5A993D00EDD0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B942DC731E5A993D00EDD0C9 /* LaunchScreen.storyboard */; };
+		B942DC881E5AA02B00EDD0C9 /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC871E5AA02B00EDD0C9 /* YLBaseViewController.m */; };
+		B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9D31E5AD5CD004F099B /* YLExploreViewController.m */; };
+		B94AC9DB1E5C12D5004F099B /* YLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9DA1E5C12D5004F099B /* YLWebViewController.m */; };
+		B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */; };
+		B94AC9E21E5C2057004F099B /* YLListBookViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */; };
+		B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +28,25 @@
 		B942DC661E5A993D00EDD0C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B942DC681E5A993D00EDD0C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B942DC691E5A993D00EDD0C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B942DC6B1E5A993D00EDD0C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B942DC6C1E5A993D00EDD0C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B942DC6F1E5A993D00EDD0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B942DC711E5A993D00EDD0C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B942DC741E5A993D00EDD0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B942DC761E5A993D00EDD0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B942DC841E5A9EBF00EDD0C9 /* YLMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMacro.h; sourceTree = "<group>"; };
+		B942DC851E5A9ED200EDD0C9 /* YLNetWorkMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetWorkMacro.h; sourceTree = "<group>"; };
+		B942DC861E5AA02B00EDD0C9 /* YLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseViewController.h; sourceTree = "<group>"; };
+		B942DC871E5AA02B00EDD0C9 /* YLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseViewController.m; sourceTree = "<group>"; };
+		B94AC9CA1E5ACAB5004F099B /* YLHeaderMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHeaderMacro.h; sourceTree = "<group>"; };
+		B94AC9D21E5AD5CD004F099B /* YLExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExploreViewController.h; sourceTree = "<group>"; };
+		B94AC9D31E5AD5CD004F099B /* YLExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExploreViewController.m; sourceTree = "<group>"; };
+		B94AC9D91E5C12D5004F099B /* YLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWebViewController.h; sourceTree = "<group>"; };
+		B94AC9DA1E5C12D5004F099B /* YLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWebViewController.m; sourceTree = "<group>"; };
+		B94AC9DC1E5C13CC004F099B /* YLAuthorizeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAuthorizeWebViewController.h; sourceTree = "<group>"; };
+		B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAuthorizeWebViewController.m; sourceTree = "<group>"; };
+		B94AC9E01E5C2057004F099B /* YLListBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListBookViewController.h; sourceTree = "<group>"; };
+		B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YLListBookViewController.mm; sourceTree = "<group>"; };
+		B94AC9E41E5C245D004F099B /* YLListBookCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListBookCellComponent.h; sourceTree = "<group>"; };
+		B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YLListBookCellComponent.mm; sourceTree = "<group>"; };
 		BFA67FF9EBC786068C2DD512 /* Pods-YLGitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLGitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLGitBook/Pods-YLGitBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,15 +92,22 @@
 		B942DC641E5A993D00EDD0C9 /* YLGitBook */ = {
 			isa = PBXGroup;
 			children = (
+				B942DC7E1E5A9E7E00EDD0C9 /* BaseClass */,
+				B942DC801E5A9E7E00EDD0C9 /* Macro */,
+				B942DC821E5A9E7F00EDD0C9 /* Utils */,
+				B942DC831E5A9E7F00EDD0C9 /* View */,
+				B942DC7F1E5A9E7E00EDD0C9 /* Controller */,
+				B942DC921E5AC6B000EDD0C9 /* ViewModel */,
+				B94AC9DF1E5C1F96004F099B /* Network */,
+				B942DC811E5A9E7F00EDD0C9 /* Resources */,
 				B942DC681E5A993D00EDD0C9 /* AppDelegate.h */,
 				B942DC691E5A993D00EDD0C9 /* AppDelegate.m */,
-				B942DC6B1E5A993D00EDD0C9 /* ViewController.h */,
-				B942DC6C1E5A993D00EDD0C9 /* ViewController.m */,
 				B942DC6E1E5A993D00EDD0C9 /* Main.storyboard */,
 				B942DC711E5A993D00EDD0C9 /* Assets.xcassets */,
 				B942DC731E5A993D00EDD0C9 /* LaunchScreen.storyboard */,
 				B942DC761E5A993D00EDD0C9 /* Info.plist */,
 				B942DC651E5A993D00EDD0C9 /* Supporting Files */,
+				B942DC841E5A9EBF00EDD0C9 /* YLMacro.h */,
 			);
 			path = YLGitBook;
 			sourceTree = "<group>";
@@ -93,6 +118,84 @@
 				B942DC661E5A993D00EDD0C9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B942DC7E1E5A9E7E00EDD0C9 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				B942DC861E5AA02B00EDD0C9 /* YLBaseViewController.h */,
+				B942DC871E5AA02B00EDD0C9 /* YLBaseViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		B942DC7F1E5A9E7E00EDD0C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B94AC9D21E5AD5CD004F099B /* YLExploreViewController.h */,
+				B94AC9D31E5AD5CD004F099B /* YLExploreViewController.m */,
+				B94AC9D91E5C12D5004F099B /* YLWebViewController.h */,
+				B94AC9DA1E5C12D5004F099B /* YLWebViewController.m */,
+				B94AC9DC1E5C13CC004F099B /* YLAuthorizeWebViewController.h */,
+				B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */,
+				B94AC9E01E5C2057004F099B /* YLListBookViewController.h */,
+				B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B942DC801E5A9E7E00EDD0C9 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				B942DC851E5A9ED200EDD0C9 /* YLNetWorkMacro.h */,
+				B94AC9CA1E5ACAB5004F099B /* YLHeaderMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		B942DC811E5A9E7F00EDD0C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B942DC821E5A9E7F00EDD0C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B942DC831E5A9E7F00EDD0C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B94AC9E31E5C20A7004F099B /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B942DC921E5AC6B000EDD0C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B94AC9DF1E5C1F96004F099B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B94AC9E31E5C20A7004F099B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B94AC9E41E5C245D004F099B /* YLListBookCellComponent.h */,
+				B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 		E2A453F26BE17E03F7926273 /* Frameworks */ = {
@@ -226,8 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B942DC6D1E5A993D00EDD0C9 /* ViewController.m in Sources */,
+				B94AC9DB1E5C12D5004F099B /* YLWebViewController.m in Sources */,
+				B942DC881E5AA02B00EDD0C9 /* YLBaseViewController.m in Sources */,
+				B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */,
+				B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */,
+				B94AC9E21E5C2057004F099B /* YLListBookViewController.mm in Sources */,
 				B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */,
+				B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */,
 				B942DC671E5A993D00EDD0C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7J89JYA39;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLGitBook/YLMacro.h";
 				INFOPLIST_FILE = YLGitBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ylzhu.YLGitBook;
@@ -361,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7J89JYA39;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YLGitBook/YLMacro.h";
 				INFOPLIST_FILE = YLGitBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ylzhu.YLGitBook;
@@ -387,6 +497,7 @@
 				B942DC7B1E5A993D00EDD0C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

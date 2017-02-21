@@ -11,6 +11,8 @@ target 'YLGitBook' do
     pod 'YYModel', '~> 1.0.4'
     pod 'FMDB', '~> 2.6.2'
     pod 'SDWebImage', '~> 4.0.0-beta2'
+    pod 'AFNetworking', '~> 3.1.0'
   # Pods for YLGitBook
 
 end
+ 
