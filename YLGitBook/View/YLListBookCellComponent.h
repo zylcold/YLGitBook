@@ -7,7 +7,7 @@
 //
 
 #import <ComponentKit/ComponentKit.h>
-
+#import "YLBookInfoItem.h"
 @interface YLListBookCellComponent : CKCompositeComponent
-+ (CKComponent *)newWithModel:(id)model context:(id)context;
++ (CKComponent *)newWithModel:(id<YLBookInfoItem>)model context:(id<CKNetworkImageDownloading>)context;
 @end

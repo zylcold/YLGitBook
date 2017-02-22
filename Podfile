@@ -12,6 +12,7 @@ target 'YLGitBook' do
     pod 'FMDB', '~> 2.6.2'
     pod 'SDWebImage', '~> 4.0.0-beta2'
     pod 'AFNetworking', '~> 3.1.0'
+    pod 'ProgressHUD', '~> 2.4'
   # Pods for YLGitBook
 
 end

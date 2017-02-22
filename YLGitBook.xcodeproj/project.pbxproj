@@ -19,6 +19,20 @@
 		B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */; };
 		B94AC9E21E5C2057004F099B /* YLListBookViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */; };
 		B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */; };
+		B94AC9FC1E5D222C004F099B /* WPObjectsSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9EF1E5D222C004F099B /* WPObjectsSerializer.m */; };
+		B94AC9FD1E5D222C004F099B /* WPPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9F21E5D222C004F099B /* WPPaginator.m */; };
+		B94AC9FE1E5D222C004F099B /* WPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9F41E5D222C004F099B /* WPRequest.m */; };
+		B94AC9FF1E5D222C004F099B /* WPSessionManager+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9F61E5D222C004F099B /* WPSessionManager+Protected.m */; };
+		B94ACA001E5D222C004F099B /* WPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9F81E5D222C004F099B /* WPSessionManager.m */; };
+		B94ACA031E5D24BD004F099B /* AFURLSessionManager+RACExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA021E5D24BD004F099B /* AFURLSessionManager+RACExtension.m */; };
+		B94ACA061E5D25A9004F099B /* YLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA051E5D25A9004F099B /* YLClient.m */; };
+		B94ACA091E5D2750004F099B /* YLGetBookAllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA081E5D2750004F099B /* YLGetBookAllRequest.m */; };
+		B94ACA0C1E5D27A9004F099B /* YLResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA0B1E5D27A9004F099B /* YLResponses.m */; };
+		B94ACA0F1E5D28A4004F099B /* YLBookAllResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA0E1E5D28A4004F099B /* YLBookAllResponses.m */; };
+		B94ACA131E5D2910004F099B /* YLBookInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA121E5D2910004F099B /* YLBookInfo.m */; };
+		B94ACA161E5D2C48004F099B /* YLAuthorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA151E5D2C48004F099B /* YLAuthorInfo.m */; };
+		B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */; };
+		B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +61,36 @@
 		B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YLListBookViewController.mm; sourceTree = "<group>"; };
 		B94AC9E41E5C245D004F099B /* YLListBookCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListBookCellComponent.h; sourceTree = "<group>"; };
 		B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YLListBookCellComponent.mm; sourceTree = "<group>"; };
+		B94AC9EE1E5D222C004F099B /* WPObjectsSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPObjectsSerializer.h; sourceTree = "<group>"; };
+		B94AC9EF1E5D222C004F099B /* WPObjectsSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPObjectsSerializer.m; sourceTree = "<group>"; };
+		B94AC9F01E5D222C004F099B /* WPPaginating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPaginating.h; sourceTree = "<group>"; };
+		B94AC9F11E5D222C004F099B /* WPPaginator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPaginator.h; sourceTree = "<group>"; };
+		B94AC9F21E5D222C004F099B /* WPPaginator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPaginator.m; sourceTree = "<group>"; };
+		B94AC9F31E5D222C004F099B /* WPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPRequest.h; sourceTree = "<group>"; };
+		B94AC9F41E5D222C004F099B /* WPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPRequest.m; sourceTree = "<group>"; };
+		B94AC9F51E5D222C004F099B /* WPSessionManager+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WPSessionManager+Protected.h"; sourceTree = "<group>"; };
+		B94AC9F61E5D222C004F099B /* WPSessionManager+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WPSessionManager+Protected.m"; sourceTree = "<group>"; };
+		B94AC9F71E5D222C004F099B /* WPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPSessionManager.h; sourceTree = "<group>"; };
+		B94AC9F81E5D222C004F099B /* WPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPSessionManager.m; sourceTree = "<group>"; };
+		B94ACA011E5D24BD004F099B /* AFURLSessionManager+RACExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFURLSessionManager+RACExtension.h"; sourceTree = "<group>"; };
+		B94ACA021E5D24BD004F099B /* AFURLSessionManager+RACExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFURLSessionManager+RACExtension.m"; sourceTree = "<group>"; };
+		B94ACA041E5D25A9004F099B /* YLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLClient.h; sourceTree = "<group>"; };
+		B94ACA051E5D25A9004F099B /* YLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLClient.m; sourceTree = "<group>"; };
+		B94ACA071E5D2750004F099B /* YLGetBookAllRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetBookAllRequest.h; sourceTree = "<group>"; };
+		B94ACA081E5D2750004F099B /* YLGetBookAllRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetBookAllRequest.m; sourceTree = "<group>"; };
+		B94ACA0A1E5D27A9004F099B /* YLResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLResponses.h; path = ../Responses/YLResponses.h; sourceTree = "<group>"; };
+		B94ACA0B1E5D27A9004F099B /* YLResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLResponses.m; path = ../Responses/YLResponses.m; sourceTree = "<group>"; };
+		B94ACA0D1E5D28A4004F099B /* YLBookAllResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookAllResponses.h; sourceTree = "<group>"; };
+		B94ACA0E1E5D28A4004F099B /* YLBookAllResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBookAllResponses.m; sourceTree = "<group>"; };
+		B94ACA111E5D2910004F099B /* YLBookInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookInfo.h; sourceTree = "<group>"; };
+		B94ACA121E5D2910004F099B /* YLBookInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBookInfo.m; sourceTree = "<group>"; };
+		B94ACA141E5D2C48004F099B /* YLAuthorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAuthorInfo.h; sourceTree = "<group>"; };
+		B94ACA151E5D2C48004F099B /* YLAuthorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAuthorInfo.m; sourceTree = "<group>"; };
+		B94ACA1D1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+CKNetworkImageDownloading.h"; sourceTree = "<group>"; };
+		B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDWebImageManager+CKNetworkImageDownloading.mm"; sourceTree = "<group>"; };
+		B94ACA201E5D6F9F004F099B /* YLBookInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookInfoItem.h; sourceTree = "<group>"; };
+		B9E62B3F1E5D835200FD7E2B /* UIColor+WLZ_HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WLZ_HexRGB.h"; sourceTree = "<group>"; };
+		B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WLZ_HexRGB.m"; sourceTree = "<group>"; };
 		BFA67FF9EBC786068C2DD512 /* Pods-YLGitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLGitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLGitBook/Pods-YLGitBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +136,8 @@
 		B942DC641E5A993D00EDD0C9 /* YLGitBook */ = {
 			isa = PBXGroup;
 			children = (
+				B94ACA1B1E5D671E004F099B /* Categories */,
+				B94ACA101E5D28E9004F099B /* Model */,
 				B942DC7E1E5A9E7E00EDD0C9 /* BaseClass */,
 				B942DC801E5A9E7E00EDD0C9 /* Macro */,
 				B942DC821E5A9E7F00EDD0C9 /* Utils */,
@@ -185,6 +231,12 @@
 		B94AC9DF1E5C1F96004F099B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B94AC9ED1E5D222C004F099B /* Core */,
+				B94AC9F91E5D222C004F099B /* Requests */,
+				B94AC9FA1E5D222C004F099B /* Responses */,
+				B94AC9FB1E5D222C004F099B /* Routes */,
+				B94ACA041E5D25A9004F099B /* YLClient.h */,
+				B94ACA051E5D25A9004F099B /* YLClient.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -192,10 +244,80 @@
 		B94AC9E31E5C20A7004F099B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				B94ACA1D1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.h */,
+				B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */,
 				B94AC9E41E5C245D004F099B /* YLListBookCellComponent.h */,
 				B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */,
 			);
 			name = Component;
+			sourceTree = "<group>";
+		};
+		B94AC9ED1E5D222C004F099B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B94ACA0A1E5D27A9004F099B /* YLResponses.h */,
+				B94ACA0B1E5D27A9004F099B /* YLResponses.m */,
+				B94AC9EE1E5D222C004F099B /* WPObjectsSerializer.h */,
+				B94AC9EF1E5D222C004F099B /* WPObjectsSerializer.m */,
+				B94AC9F01E5D222C004F099B /* WPPaginating.h */,
+				B94AC9F11E5D222C004F099B /* WPPaginator.h */,
+				B94AC9F21E5D222C004F099B /* WPPaginator.m */,
+				B94AC9F31E5D222C004F099B /* WPRequest.h */,
+				B94AC9F41E5D222C004F099B /* WPRequest.m */,
+				B94AC9F51E5D222C004F099B /* WPSessionManager+Protected.h */,
+				B94AC9F61E5D222C004F099B /* WPSessionManager+Protected.m */,
+				B94AC9F71E5D222C004F099B /* WPSessionManager.h */,
+				B94AC9F81E5D222C004F099B /* WPSessionManager.m */,
+				B94ACA011E5D24BD004F099B /* AFURLSessionManager+RACExtension.h */,
+				B94ACA021E5D24BD004F099B /* AFURLSessionManager+RACExtension.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B94AC9F91E5D222C004F099B /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				B94ACA071E5D2750004F099B /* YLGetBookAllRequest.h */,
+				B94ACA081E5D2750004F099B /* YLGetBookAllRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B94AC9FA1E5D222C004F099B /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B94ACA0D1E5D28A4004F099B /* YLBookAllResponses.h */,
+				B94ACA0E1E5D28A4004F099B /* YLBookAllResponses.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		B94AC9FB1E5D222C004F099B /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		B94ACA101E5D28E9004F099B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B94ACA111E5D2910004F099B /* YLBookInfo.h */,
+				B94ACA121E5D2910004F099B /* YLBookInfo.m */,
+				B94ACA141E5D2C48004F099B /* YLAuthorInfo.h */,
+				B94ACA151E5D2C48004F099B /* YLAuthorInfo.m */,
+				B94ACA201E5D6F9F004F099B /* YLBookInfoItem.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B94ACA1B1E5D671E004F099B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B9E62B3F1E5D835200FD7E2B /* UIColor+WLZ_HexRGB.h */,
+				B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		E2A453F26BE17E03F7926273 /* Frameworks */ = {
@@ -329,14 +451,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94ACA001E5D222C004F099B /* WPSessionManager.m in Sources */,
 				B94AC9DB1E5C12D5004F099B /* YLWebViewController.m in Sources */,
+				B94ACA091E5D2750004F099B /* YLGetBookAllRequest.m in Sources */,
 				B942DC881E5AA02B00EDD0C9 /* YLBaseViewController.m in Sources */,
+				B94AC9FD1E5D222C004F099B /* WPPaginator.m in Sources */,
+				B94ACA131E5D2910004F099B /* YLBookInfo.m in Sources */,
 				B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */,
+				B94ACA0F1E5D28A4004F099B /* YLBookAllResponses.m in Sources */,
 				B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */,
 				B94AC9E21E5C2057004F099B /* YLListBookViewController.mm in Sources */,
+				B94ACA061E5D25A9004F099B /* YLClient.m in Sources */,
+				B94AC9FF1E5D222C004F099B /* WPSessionManager+Protected.m in Sources */,
+				B94ACA031E5D24BD004F099B /* AFURLSessionManager+RACExtension.m in Sources */,
+				B94ACA161E5D2C48004F099B /* YLAuthorInfo.m in Sources */,
+				B94AC9FC1E5D222C004F099B /* WPObjectsSerializer.m in Sources */,
 				B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */,
+				B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */,
+				B94AC9FE1E5D222C004F099B /* WPRequest.m in Sources */,
 				B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */,
 				B942DC671E5A993D00EDD0C9 /* main.m in Sources */,
+				B94ACA0C1E5D27A9004F099B /* YLResponses.m in Sources */,
+				B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

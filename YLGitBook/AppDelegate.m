@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YLClient.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    YLClient *client = [[YLClient alloc] initWithBaseURL:[NSURL URLWithString:YLBaseURL]];
+    [YLClient setSharedInstance:client];
+    
+    
     return YES;
 }
 

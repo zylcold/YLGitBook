@@ -7,25 +7,43 @@
 //
 
 #import "YLListBookCellComponent.h"
-
+#import "YLBookInfo.h"
 @implementation YLListBookCellComponent
-+ (CKComponent *)newWithModel:(id)model context:(id)context
++ (CKComponent *)newWithModel:(id<YLBookInfoItem>)model context:(id<CKNetworkImageDownloading>)context
 {
     return [super newWithView:{} component:[CKStackLayoutComponent newWithView:{} size:{.width = [UIScreen mainScreen].bounds.size.width, .height = 100 } style:{.direction = CKStackLayoutDirectionHorizontal, .alignItems = CKStackLayoutAlignItemsStretch} children:{
-        {.component = [CKImageComponent newWithImage:self.defaultImage]},
-        {.component = [self bookInfoWithModel:model context:context],
-        .flexGrow = YES
+        {
+            .component = [CKNetworkImageComponent newWithURL:[NSURL URLWithString:model.cover.small] imageDownloader:context scenePath:nil size:{ .width = 60, .height = 80} options:{.defaultImage = self.defaultImage} attributes:{
+            {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOpacity:)), @(0.5)},
+            {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOffset:)), [NSValue valueWithCGSize:CGSizeMake(0, 0)]}}],
+            .alignSelf = CKStackLayoutAlignSelfCenter,
+            .spacingBefore = 15
+        },
+        {
+            .component = [self bookInfoWithModel:model context:context],
+            .flexGrow = YES,
+            .flexShrink = YES
         }
     }]];
 }
 
-+ (CKComponent *)bookInfoWithModel:(id)model context:(id)context
++ (CKComponent *)bookInfoWithModel:(id<YLBookInfoItem>)model context:(id<NSObject>)context
 {
     return [CKInsetComponent newWithInsets:UIEdgeInsetsMake(10, 10, 10, 10) component:[CKStackLayoutComponent newWithView:{
-        [UIView class],
-        {{@selector(setBackgroundColor:), [UIColor yellowColor]}}
+
     } size:{} style:{} children:{
-        {.component = [CKLabelComponent newWithLabelAttributes:{.string = @"HHHHH"} viewAttributes:{} size:{}]}
+        {
+            .component = [CKLabelComponent newWithLabelAttributes:{.string = model.title, .maximumNumberOfLines = 1, .lineBreakMode = NSLineBreakByTruncatingTail, .font = [UIFont systemFontOfSize:16], .color = [UIColor colorFromHexRGB:@"333333"]} viewAttributes:{{CKComponentViewAttribute(@selector(setUserInteractionEnabled:)), @(NO)},{CKComponentViewAttribute(@selector(setBackgroundColor:)), [UIColor clearColor]}} size:{}],
+        },
+        {
+            .component = [CKLabelComponent newWithLabelAttributes:{.string = model.name, .maximumNumberOfLines = 1, .lineBreakMode = NSLineBreakByTruncatingTail, .font = [UIFont systemFontOfSize:12], .color = [UIColor colorFromHexRGB:@"999999"]} viewAttributes:{{CKComponentViewAttribute(@selector(setUserInteractionEnabled:)), @(NO)}, {CKComponentViewAttribute(@selector(setBackgroundColor:)), [UIColor clearColor]}} size:{}],
+            .spacingBefore = 5,
+        },
+        {
+            .component = [CKLabelComponent newWithLabelAttributes:{.string = model.book_description, .maximumNumberOfLines = 0, .lineBreakMode = NSLineBreakByTruncatingTail, .font = [UIFont systemFontOfSize:14], .color = [UIColor colorFromHexRGB:@"333333"]} viewAttributes:{{CKComponentViewAttribute(@selector(setUserInteractionEnabled:)), @(NO)},{CKComponentViewAttribute(@selector(setBackgroundColor:)), [UIColor clearColor]}} size:{}],
+            .spacingBefore = 5,
+            .flexShrink = YES
+        }
     }]];
 }
 

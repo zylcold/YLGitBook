@@ -9,4 +9,7 @@
 #ifndef YLHeaderMacro_h
 #define YLHeaderMacro_h
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <ProgressHUD/ProgressHUD.h>
+
+#import "UIColor+WLZ_HexRGB.h"
 #endif /* YLHeaderMacro_h */
