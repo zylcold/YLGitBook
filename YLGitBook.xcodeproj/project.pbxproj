@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6596C2DAC6524C8622667609 /* libPods-YLGitBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696940D509B68C6D652C3B74 /* libPods-YLGitBook.a */; };
+		AEF43F3C1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEF43F3B1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm */; };
 		B942DC671E5A993D00EDD0C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC661E5A993D00EDD0C9 /* main.m */; };
 		B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC691E5A993D00EDD0C9 /* AppDelegate.m */; };
 		B942DC701E5A993D00EDD0C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B942DC6E1E5A993D00EDD0C9 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		696940D509B68C6D652C3B74 /* libPods-YLGitBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YLGitBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD0C8E2211770C0CB6975A1 /* Pods-YLGitBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLGitBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLGitBook/Pods-YLGitBook.release.xcconfig"; sourceTree = "<group>"; };
+		AEF43F3A1E5DD90000997BE3 /* YLListBookCellLoadingComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLListBookCellLoadingComponent.h; sourceTree = "<group>"; };
+		AEF43F3B1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YLListBookCellLoadingComponent.mm; sourceTree = "<group>"; };
 		B942DC621E5A993D00EDD0C9 /* YLGitBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLGitBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B942DC661E5A993D00EDD0C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B942DC681E5A993D00EDD0C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 				B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */,
 				B94AC9E41E5C245D004F099B /* YLListBookCellComponent.h */,
 				B94AC9E51E5C245D004F099B /* YLListBookCellComponent.mm */,
+				AEF43F3A1E5DD90000997BE3 /* YLListBookCellLoadingComponent.h */,
+				AEF43F3B1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm */,
 			);
 			name = Component;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				B94ACA131E5D2910004F099B /* YLBookInfo.m in Sources */,
 				B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */,
 				B94ACA0F1E5D28A4004F099B /* YLBookAllResponses.m in Sources */,
+				AEF43F3C1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm in Sources */,
 				B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */,
 				B94AC9E21E5C2057004F099B /* YLListBookViewController.mm in Sources */,
 				B94ACA061E5D25A9004F099B /* YLClient.m in Sources */,

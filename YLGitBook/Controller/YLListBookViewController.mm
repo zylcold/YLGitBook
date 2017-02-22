@@ -14,6 +14,7 @@
 #import "YLBookInfo.h"
 #import "SDWebImageManager+CKNetworkImageDownloading.h"
 #import "YLBookInfoItem.h"
+#import "YLListBookCellLoadingComponent.h"
 @interface YLListBookViewController ()<CKComponentProvider, UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property(nonatomic, strong) CKCollectionViewDataSource *dataSource;
@@ -29,11 +30,15 @@
     self.dataSource = [[CKCollectionViewDataSource alloc] initWithCollectionView:self.collectionView supplementaryViewDataSource:nil componentProvider:self.class context:[SDWebImageManager sharedManager] cellConfigurationFunction:nil];
     CKArrayControllerSections sections;
     sections.insert(0);
-    [self.dataSource enqueueChangeset:{sections, {}} constrainedSize:{{0, 0}, {500,100}}];
     
-    [ProgressHUD show];
+    CKArrayControllerInputItems items;
+    items.insert({0, 0}, @"zzzzz");
+    items.insert({0, 1}, @"zzzzz");
+    items.insert({0, 2}, @"zzzzz");
+    [self.dataSource enqueueChangeset:{sections, items} constrainedSize:{{0, 0}, {500,100}}];
+    
+    
     [[[YLClient sharedInstance] performRequest:[YLGetBookAllRequest new]]subscribeNext:^(YLBookAllResponses *x) {
-        [ProgressHUD showSuccess];
         __block CKArrayControllerInputItems newItems;
         [x.list enumerateObjectsUsingBlock:^(YLBookInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             newItems.insert({0, (NSInteger)idx}, obj);
@@ -73,6 +78,9 @@
 
 + (CKComponent *)componentForModel:(id<YLBookInfoItem>)model context:(id<CKNetworkImageDownloading>)context
 {
+    if([model isKindOfClass:[NSString class]]) {
+        return [YLListBookCellLoadingComponent newWithModel:model context:context];
+    }
     return [YLListBookCellComponent newWithModel:model context:context];
 }
 

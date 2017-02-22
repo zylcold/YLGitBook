@@ -27,6 +27,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - Shimmer (1.0.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - ProgressHUD (~> 2.4)
   - ReactiveObjC (~> 2.1.2)
   - SDWebImage (~> 4.0.0-beta2)
+  - Shimmer (~> 1.0.2)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
@@ -53,8 +55,9 @@ SPEC CHECKSUMS:
   ProgressHUD: 4b66b0df0e08519c5c7283a198fd2867a114c95a
   ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 9fafb75c8c55a09df00831dfc573a632d135f0f1
+PODFILE CHECKSUM: 9032bb2efe724f70da99c9a25040f06193fe8223
 
 COCOAPODS: 1.1.0.rc.2
