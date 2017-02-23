@@ -15,9 +15,11 @@
 #import "SDWebImageManager+CKNetworkImageDownloading.h"
 #import "YLBookInfoItem.h"
 #import "YLListBookCellLoadingComponent.h"
+#import "UIScrollView+RefreshSignal.h"
 @interface YLListBookViewController ()<CKComponentProvider, UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property(nonatomic, strong) CKCollectionViewDataSource *dataSource;
+@property(nonatomic, strong) NSMutableArray *datas;
 @end
 
 @implementation YLListBookViewController
@@ -34,16 +36,37 @@
     CKArrayControllerInputItems items;
     items.insert({0, 0}, @"zzzzz");
     items.insert({0, 1}, @"zzzzz");
-    items.insert({0, 2}, @"zzzzz");
     [self.dataSource enqueueChangeset:{sections, items} constrainedSize:{{0, 0}, {500,100}}];
     
     
     [[[YLClient sharedInstance] performRequest:[YLGetBookAllRequest new]]subscribeNext:^(YLBookAllResponses *x) {
         __block CKArrayControllerInputItems newItems;
+        
+        newItems.remove({0, 0});
+        newItems.remove({0, 1});
+        
         [x.list enumerateObjectsUsingBlock:^(YLBookInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             newItems.insert({0, (NSInteger)idx}, obj);
         }];
         [self.dataSource enqueueChangeset:{{}, newItems} constrainedSize:{{0, 0}, {500,100}}];
+    }];
+    
+    self.collectionView.yl_pullToRefreshCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+       
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            NSLog(@"-----");
+//            [subscriber sendNext:@""];
+            [subscriber sendCompleted];
+            return nil;
+        }];
+    }];
+    
+    self.collectionView.yl_infinityScrollCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            NSLog(@"<<<<<<<<<");
+            [subscriber sendCompleted];
+            return nil;
+        }];
     }];
 }
 

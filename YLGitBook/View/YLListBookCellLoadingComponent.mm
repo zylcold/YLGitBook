@@ -8,35 +8,19 @@
 
 #import "YLListBookCellLoadingComponent.h"
 #import <Shimmer/FBShimmeringView.h>
-@interface YLShimmerView: UIView
-@end
-@implementation YLShimmerView
-- (void)didMoveToSuperview
-{
-    [super didMoveToSuperview];
-}
 
-@end
 
 @implementation YLListBookCellLoadingComponent
 + (instancetype)newWithModel:(id)model context:(id<NSObject>)context
 {
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.defaultImage];
+    
     return [super newWithView:{} component:[CKStackLayoutComponent newWithView:{} size:{.width = [UIScreen mainScreen].bounds.size.width, .height = 100 } style:{.direction = CKStackLayoutDirectionHorizontal, .alignItems = CKStackLayoutAlignItemsStretch} children:{
         {
-            .component = [CKCompositeComponent newWithView:{
-                [FBShimmeringView class],
-                {
-                    {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOpacity:)), @(0.5)},
-                    {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOffset:)), [NSValue valueWithCGSize:CGSizeMake(0, 0)]},
-                    {CKComponentViewAttribute(@selector(setContentView:)), [[UIImageView alloc] initWithImage:self.defaultImage] },
-                    {CKComponentViewAttribute(@selector(setShimmering:)), @(YES)}
-                },
-                
-            } component:[CKComponent newWithView:{} size:{60, 80}]],
+            .component = [self shimmeringContentView:imageView size:{60, 80}],
             .alignSelf = CKStackLayoutAlignSelfCenter,
             .spacingBefore = 15
-            
-        
         },
         {
             .component = [self bookInfoWithModel:model context:context],
@@ -44,6 +28,21 @@
             .flexShrink = YES
         }
     }]];
+}
+
+
++ (CKComponent *)shimmeringContentView:(UIView *)contentView size:(CGSize)size
+{
+    return [CKCompositeComponent newWithView:{
+        [FBShimmeringView class],
+        {
+            {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOpacity:)), @(0.5)},
+            {CKComponentViewAttribute::LayerAttribute(@selector(setShadowOffset:)), [NSValue valueWithCGSize:CGSizeMake(0, 0)]},
+            {CKComponentViewAttribute(@selector(setContentView:)), contentView },
+            {CKComponentViewAttribute(@selector(setShimmering:)), @(YES)}
+        },
+        
+    } component:[CKComponent newWithView:{} size:{60, 80}]];
 }
 
 
@@ -85,4 +84,6 @@
     });
     return defaultImage;
 }
+
+
 @end

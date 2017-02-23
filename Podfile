@@ -14,6 +14,7 @@ target 'YLGitBook' do
     pod 'AFNetworking', '~> 3.1.0'
     pod 'ProgressHUD', '~> 2.4'
     pod 'Shimmer', '~> 1.0.2'
+    pod 'MJRefresh', '~> 3.1.12'
   # Pods for YLGitBook
 
 end

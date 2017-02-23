@@ -34,6 +34,7 @@
 		B94ACA161E5D2C48004F099B /* YLAuthorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA151E5D2C48004F099B /* YLAuthorInfo.m */; };
 		B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */; };
 		B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */; };
+		B9E62B441E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,8 @@
 		B94ACA201E5D6F9F004F099B /* YLBookInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookInfoItem.h; sourceTree = "<group>"; };
 		B9E62B3F1E5D835200FD7E2B /* UIColor+WLZ_HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WLZ_HexRGB.h"; sourceTree = "<group>"; };
 		B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WLZ_HexRGB.m"; sourceTree = "<group>"; };
+		B9E62B421E5E801D00FD7E2B /* UIScrollView+RefreshSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RefreshSignal.h"; sourceTree = "<group>"; };
+		B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RefreshSignal.m"; sourceTree = "<group>"; };
 		BFA67FF9EBC786068C2DD512 /* Pods-YLGitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLGitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLGitBook/Pods-YLGitBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +324,8 @@
 			children = (
 				B9E62B3F1E5D835200FD7E2B /* UIColor+WLZ_HexRGB.h */,
 				B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */,
+				B9E62B421E5E801D00FD7E2B /* UIScrollView+RefreshSignal.h */,
+				B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 				B94AC9FD1E5D222C004F099B /* WPPaginator.m in Sources */,
 				B94ACA131E5D2910004F099B /* YLBookInfo.m in Sources */,
 				B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */,
+				B9E62B441E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m in Sources */,
 				B94ACA0F1E5D28A4004F099B /* YLBookAllResponses.m in Sources */,
 				AEF43F3C1E5DD90000997BE3 /* YLListBookCellLoadingComponent.mm in Sources */,
 				B94AC9E61E5C245D004F099B /* YLListBookCellComponent.mm in Sources */,

@@ -20,7 +20,6 @@
     YLClient *client = [[YLClient alloc] initWithBaseURL:[NSURL URLWithString:YLBaseURL]];
     [YLClient setSharedInstance:client];
     
-    
     return YES;
 }
 
