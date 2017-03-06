@@ -79,7 +79,8 @@ static WPSessionManager *_sharedInstance;
         
             RACSignal *URLSignal = [[self pathFromPatternPath:[[request class] pathPattern] routeObject:request.routeObject]
                 map:^id(NSString *path) {
-                    return [NSURL URLWithString:path relativeToURL:self.baseURL];
+                    
+                    return [NSURL URLWithString:[path stringByAddingPercentEncodingWithAllowedCharacters:[ NSCharacterSet URLPathAllowedCharacterSet]] relativeToURL:self.baseURL];
                 }];
         
             RACSignal *paramsSignal = [[self.objectsSerializer rac_deserializeObject:request]
@@ -106,6 +107,10 @@ static WPSessionManager *_sharedInstance;
                                                                                URLString:[url absoluteString]
                                                                               parameters:params
                                                                                    error:&error];
+                
+                NSLog(@"\nurl--->[\n%@\n]", url.absoluteString);
+                NSLog(@"\nparams--->[\n%@\n]", params);
+                
                 if (!error) {
                     [subscriber sendNext:[request copy]];
                     [subscriber sendCompleted];
@@ -120,7 +125,7 @@ static WPSessionManager *_sharedInstance;
         flattenMap:^RACSignal *(NSURLRequest *URLRequest) {
             return [[[[self rac_dataTaskWithRequest:URLRequest]
                 flattenMap:^RACSignal *(NSDictionary *responseDictionary) {
-                    
+                    NSLog(@"\nresponseDictionary--->[\n%@\n]", responseDictionary);
                     return [self.objectsSerializer rac_serializeWithObjectClass:[[request class] responseClass] fromDictionary:responseDictionary];
                 }]
                 subscribeOn:self.responseSerializeScheduler]

@@ -51,8 +51,10 @@
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
         NSError *error;
-        NSDictionary *dictionary = [self deserializeObject:object error:&error];
-        
+        NSMutableDictionary *dictionary = [[self deserializeObject:object error:&error] mutableCopy];
+        if([[dictionary objectForKey:@"routeObject"] isKindOfClass:[NSDictionary class]]){
+            [dictionary removeObjectForKey:@"routeObject"];
+        }
         if (!error) {
             [subscriber sendNext:dictionary];
             [subscriber sendCompleted];

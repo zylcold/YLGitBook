@@ -35,6 +35,9 @@
 		B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94ACA1E1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm */; };
 		B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */; };
 		B9E62B441E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */; };
+		B9E62B4D1E5FE3A400FD7E2B /* YLBookDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B4C1E5FE3A400FD7E2B /* YLBookDetailsController.m */; };
+		B9E62B501E5FE40800FD7E2B /* YLGetBookDetailsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B4F1E5FE40800FD7E2B /* YLGetBookDetailsRequest.m */; };
+		B9E62B531E5FE4EE00FD7E2B /* YLBookDetailsResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E62B521E5FE4EE00FD7E2B /* YLBookDetailsResponses.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +100,12 @@
 		B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WLZ_HexRGB.m"; sourceTree = "<group>"; };
 		B9E62B421E5E801D00FD7E2B /* UIScrollView+RefreshSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RefreshSignal.h"; sourceTree = "<group>"; };
 		B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RefreshSignal.m"; sourceTree = "<group>"; };
+		B9E62B4B1E5FE3A400FD7E2B /* YLBookDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookDetailsController.h; sourceTree = "<group>"; };
+		B9E62B4C1E5FE3A400FD7E2B /* YLBookDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBookDetailsController.m; sourceTree = "<group>"; };
+		B9E62B4E1E5FE40800FD7E2B /* YLGetBookDetailsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGetBookDetailsRequest.h; sourceTree = "<group>"; };
+		B9E62B4F1E5FE40800FD7E2B /* YLGetBookDetailsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGetBookDetailsRequest.m; sourceTree = "<group>"; };
+		B9E62B511E5FE4EE00FD7E2B /* YLBookDetailsResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBookDetailsResponses.h; sourceTree = "<group>"; };
+		B9E62B521E5FE4EE00FD7E2B /* YLBookDetailsResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBookDetailsResponses.m; sourceTree = "<group>"; };
 		BFA67FF9EBC786068C2DD512 /* Pods-YLGitBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLGitBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLGitBook/Pods-YLGitBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +201,8 @@
 				B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */,
 				B94AC9E01E5C2057004F099B /* YLListBookViewController.h */,
 				B94AC9E11E5C2057004F099B /* YLListBookViewController.mm */,
+				B9E62B4B1E5FE3A400FD7E2B /* YLBookDetailsController.h */,
+				B9E62B4C1E5FE3A400FD7E2B /* YLBookDetailsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +298,8 @@
 			children = (
 				B94ACA071E5D2750004F099B /* YLGetBookAllRequest.h */,
 				B94ACA081E5D2750004F099B /* YLGetBookAllRequest.m */,
+				B9E62B4E1E5FE40800FD7E2B /* YLGetBookDetailsRequest.h */,
+				B9E62B4F1E5FE40800FD7E2B /* YLGetBookDetailsRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -296,6 +309,8 @@
 			children = (
 				B94ACA0D1E5D28A4004F099B /* YLBookAllResponses.h */,
 				B94ACA0E1E5D28A4004F099B /* YLBookAllResponses.m */,
+				B9E62B511E5FE4EE00FD7E2B /* YLBookDetailsResponses.h */,
+				B9E62B521E5FE4EE00FD7E2B /* YLBookDetailsResponses.m */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -463,6 +478,7 @@
 			files = (
 				B94ACA001E5D222C004F099B /* WPSessionManager.m in Sources */,
 				B94AC9DB1E5C12D5004F099B /* YLWebViewController.m in Sources */,
+				B9E62B531E5FE4EE00FD7E2B /* YLBookDetailsResponses.m in Sources */,
 				B94ACA091E5D2750004F099B /* YLGetBookAllRequest.m in Sources */,
 				B942DC881E5AA02B00EDD0C9 /* YLBaseViewController.m in Sources */,
 				B94AC9FD1E5D222C004F099B /* WPPaginator.m in Sources */,
@@ -480,8 +496,10 @@
 				B94AC9FC1E5D222C004F099B /* WPObjectsSerializer.m in Sources */,
 				B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */,
 				B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */,
+				B9E62B501E5FE40800FD7E2B /* YLGetBookDetailsRequest.m in Sources */,
 				B94AC9FE1E5D222C004F099B /* WPRequest.m in Sources */,
 				B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */,
+				B9E62B4D1E5FE3A400FD7E2B /* YLBookDetailsController.m in Sources */,
 				B942DC671E5A993D00EDD0C9 /* main.m in Sources */,
 				B94ACA0C1E5D27A9004F099B /* YLResponses.m in Sources */,
 				B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */,

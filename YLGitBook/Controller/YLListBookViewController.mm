@@ -16,6 +16,7 @@
 #import "YLBookInfoItem.h"
 #import "YLListBookCellLoadingComponent.h"
 #import "UIScrollView+RefreshSignal.h"
+#import "YLBookDetailsController.h"
 @interface YLListBookViewController ()<CKComponentProvider, UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property(nonatomic, strong) CKCollectionViewDataSource *dataSource;
@@ -99,6 +100,14 @@
     }];
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    YLBookInfo *bookInfo = (YLBookInfo *)[self.dataSource modelForItemAtIndexPath:indexPath];
+    YLBookDetailsController *bookDetailsVc = [[YLBookDetailsController alloc] init];
+    bookDetailsVc.bookInfo = bookInfo;
+    [self.navigationController pushViewController:bookDetailsVc animated:YES];
+}
+
 + (CKComponent *)componentForModel:(id<YLBookInfoItem>)model context:(id<CKNetworkImageDownloading>)context
 {
     if([model isKindOfClass:[NSString class]]) {
@@ -106,5 +115,7 @@
     }
     return [YLListBookCellComponent newWithModel:model context:context];
 }
+
+
 
 @end

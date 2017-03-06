@@ -11,4 +11,5 @@
 @class YLBookInfo;
 @interface YLBookAllResponses : YLResponses<YYModel>
 @property(nonatomic, strong) NSArray<YLBookInfo *> *list;
+@property(nonatomic, copy) NSString *limit;
 @end
