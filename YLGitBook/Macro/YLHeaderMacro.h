@@ -10,6 +10,8 @@
 #define YLHeaderMacro_h
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <ProgressHUD/ProgressHUD.h>
+#import <FMDB/FMDB.h>
 
 #import "UIColor+WLZ_HexRGB.h"
+#import "FMDatabaseQueue+YLHelper.h"
 #endif /* YLHeaderMacro_h */

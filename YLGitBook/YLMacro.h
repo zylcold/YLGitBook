@@ -11,4 +11,6 @@
 #import "YLNetWorkMacro.h"
 #import "YLHeaderMacro.h"
 
+#define MRCLogLastError(db) NSLog(@"lastError: %@, lastErrorCode: %d, lastErrorMessage: %@", [db lastError], [db lastErrorCode], [db lastErrorMessage]);
+
 #endif /* YLMacro_h */

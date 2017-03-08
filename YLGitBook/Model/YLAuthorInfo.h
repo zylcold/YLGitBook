@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <YYModel/YYModel.h>
 @interface YLAuthorInfoUrls : NSObject
 @property(nonatomic, copy) NSString *profile;
 @property(nonatomic, copy) NSString *stars;

@@ -15,6 +15,10 @@
 		B942DC721E5A993D00EDD0C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B942DC711E5A993D00EDD0C9 /* Assets.xcassets */; };
 		B942DC751E5A993D00EDD0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B942DC731E5A993D00EDD0C9 /* LaunchScreen.storyboard */; };
 		B942DC881E5AA02B00EDD0C9 /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B942DC871E5AA02B00EDD0C9 /* YLBaseViewController.m */; };
+		B94971531E6FA80800207197 /* FMDatabaseQueue+YLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B94971521E6FA80800207197 /* FMDatabaseQueue+YLHelper.m */; };
+		B94971551E6FAAE600207197 /* version1.sql in Resources */ = {isa = PBXBuildFile; fileRef = B94971541E6FAAE600207197 /* version1.sql */; };
+		B949715A1E6FB57F00207197 /* YLBookInfo+YLPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = B94971591E6FB57F00207197 /* YLBookInfo+YLPersistence.m */; };
+		B949715D1E6FF64200207197 /* YLAuthorInfo+YLPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = B949715C1E6FF64200207197 /* YLAuthorInfo+YLPersistence.m */; };
 		B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9D31E5AD5CD004F099B /* YLExploreViewController.m */; };
 		B94AC9DB1E5C12D5004F099B /* YLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9DA1E5C12D5004F099B /* YLWebViewController.m */; };
 		B94AC9DE1E5C13CC004F099B /* YLAuthorizeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94AC9DD1E5C13CC004F099B /* YLAuthorizeWebViewController.m */; };
@@ -57,6 +61,14 @@
 		B942DC851E5A9ED200EDD0C9 /* YLNetWorkMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetWorkMacro.h; sourceTree = "<group>"; };
 		B942DC861E5AA02B00EDD0C9 /* YLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseViewController.h; sourceTree = "<group>"; };
 		B942DC871E5AA02B00EDD0C9 /* YLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseViewController.m; sourceTree = "<group>"; };
+		B94971511E6FA80800207197 /* FMDatabaseQueue+YLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabaseQueue+YLHelper.h"; sourceTree = "<group>"; };
+		B94971521E6FA80800207197 /* FMDatabaseQueue+YLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabaseQueue+YLHelper.m"; sourceTree = "<group>"; };
+		B94971541E6FAAE600207197 /* version1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version1.sql; sourceTree = "<group>"; };
+		B94971561E6FB50A00207197 /* YLPersistenceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPersistenceProtocol.h; sourceTree = "<group>"; };
+		B94971581E6FB57F00207197 /* YLBookInfo+YLPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLBookInfo+YLPersistence.h"; sourceTree = "<group>"; };
+		B94971591E6FB57F00207197 /* YLBookInfo+YLPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YLBookInfo+YLPersistence.m"; sourceTree = "<group>"; };
+		B949715B1E6FF64200207197 /* YLAuthorInfo+YLPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLAuthorInfo+YLPersistence.h"; sourceTree = "<group>"; };
+		B949715C1E6FF64200207197 /* YLAuthorInfo+YLPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YLAuthorInfo+YLPersistence.m"; sourceTree = "<group>"; };
 		B94AC9CA1E5ACAB5004F099B /* YLHeaderMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHeaderMacro.h; sourceTree = "<group>"; };
 		B94AC9D21E5AD5CD004F099B /* YLExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLExploreViewController.h; sourceTree = "<group>"; };
 		B94AC9D31E5AD5CD004F099B /* YLExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLExploreViewController.m; sourceTree = "<group>"; };
@@ -177,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B942DC661E5A993D00EDD0C9 /* main.m */,
+				B94971541E6FAAE600207197 /* version1.sql */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,6 +343,11 @@
 				B94ACA141E5D2C48004F099B /* YLAuthorInfo.h */,
 				B94ACA151E5D2C48004F099B /* YLAuthorInfo.m */,
 				B94ACA201E5D6F9F004F099B /* YLBookInfoItem.h */,
+				B94971561E6FB50A00207197 /* YLPersistenceProtocol.h */,
+				B94971581E6FB57F00207197 /* YLBookInfo+YLPersistence.h */,
+				B94971591E6FB57F00207197 /* YLBookInfo+YLPersistence.m */,
+				B949715B1E6FF64200207197 /* YLAuthorInfo+YLPersistence.h */,
+				B949715C1E6FF64200207197 /* YLAuthorInfo+YLPersistence.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,6 +359,8 @@
 				B9E62B401E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m */,
 				B9E62B421E5E801D00FD7E2B /* UIScrollView+RefreshSignal.h */,
 				B9E62B431E5E801D00FD7E2B /* UIScrollView+RefreshSignal.m */,
+				B94971511E6FA80800207197 /* FMDatabaseQueue+YLHelper.h */,
+				B94971521E6FA80800207197 /* FMDatabaseQueue+YLHelper.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -416,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B942DC751E5A993D00EDD0C9 /* LaunchScreen.storyboard in Resources */,
+				B94971551E6FAAE600207197 /* version1.sql in Resources */,
 				B942DC721E5A993D00EDD0C9 /* Assets.xcassets in Resources */,
 				B942DC701E5A993D00EDD0C9 /* Main.storyboard in Resources */,
 			);
@@ -492,16 +513,19 @@
 				B94ACA061E5D25A9004F099B /* YLClient.m in Sources */,
 				B94AC9FF1E5D222C004F099B /* WPSessionManager+Protected.m in Sources */,
 				B94ACA031E5D24BD004F099B /* AFURLSessionManager+RACExtension.m in Sources */,
+				B949715D1E6FF64200207197 /* YLAuthorInfo+YLPersistence.m in Sources */,
 				B94ACA161E5D2C48004F099B /* YLAuthorInfo.m in Sources */,
 				B94AC9FC1E5D222C004F099B /* WPObjectsSerializer.m in Sources */,
 				B942DC6A1E5A993D00EDD0C9 /* AppDelegate.m in Sources */,
 				B94ACA1F1E5D6E4B004F099B /* SDWebImageManager+CKNetworkImageDownloading.mm in Sources */,
+				B949715A1E6FB57F00207197 /* YLBookInfo+YLPersistence.m in Sources */,
 				B9E62B501E5FE40800FD7E2B /* YLGetBookDetailsRequest.m in Sources */,
 				B94AC9FE1E5D222C004F099B /* WPRequest.m in Sources */,
 				B94AC9D41E5AD5CD004F099B /* YLExploreViewController.m in Sources */,
 				B9E62B4D1E5FE3A400FD7E2B /* YLBookDetailsController.m in Sources */,
 				B942DC671E5A993D00EDD0C9 /* main.m in Sources */,
 				B94ACA0C1E5D27A9004F099B /* YLResponses.m in Sources */,
+				B94971531E6FA80800207197 /* FMDatabaseQueue+YLHelper.m in Sources */,
 				B9E62B411E5D835200FD7E2B /* UIColor+WLZ_HexRGB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,7 @@
 #import "YLListBookCellLoadingComponent.h"
 #import "UIScrollView+RefreshSignal.h"
 #import "YLBookDetailsController.h"
+#import "YLBookInfo+YLPersistence.h"
 @interface YLListBookViewController ()<CKComponentProvider, UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property(nonatomic, strong) CKCollectionViewDataSource *dataSource;
@@ -47,6 +48,7 @@
         newItems.remove({0, 1});
         
         [x.list enumerateObjectsUsingBlock:^(YLBookInfo * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [obj yl_saveOrUpdate];
             newItems.insert({0, (NSInteger)idx}, obj);
         }];
         [self.dataSource enqueueChangeset:{{}, newItems} constrainedSize:{{0, 0}, {500,100}}];
@@ -56,7 +58,6 @@
        
         return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             NSLog(@"-----");
-//            [subscriber sendNext:@""];
             [subscriber sendCompleted];
             return nil;
         }];
